@@ -1,0 +1,8 @@
+# File compilati python
+__pycache__/
+*.pyc
+
+# Ambienti virtuali e configurazioni locali
+.venv/
+.env
+.vscode/
