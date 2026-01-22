@@ -47,4 +47,11 @@ pytest test_calcolatrice.py
 - git remote add origin https://github.com/giuliabota/devops-calcolatrice.git
 - git push -u origin main
 
+## Docker build
+
+docker build -f Dockerfile -t devops-calcolatrice:local .
+docker run --rm -it devops-calcolatrice:local
+
+
+
 
