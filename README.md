@@ -37,20 +37,38 @@ python3 calcolatrice.py
 
 pytest test_calcolatrice.py
 
-## Github
+## Github upload
 
-- echo "# devops-calcolatrice" >> README.md
-- git init
-- git add README.md
-- git commit -m "first commit"
-- git branch -M main
-- git remote add origin https://github.com/giuliabota/devops-calcolatrice.git
-- git push -u origin main
-
-## Docker build
-
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/XXX/devops-calcolatrice.git
+git push -u origin main
+Docker build
 docker build -f Dockerfile -t devops-calcolatrice:local .
 docker run --rm -it devops-calcolatrice:local
+
+## Docker Hub upload
+
+Crea un repository su Docker Hub
+Esempio: docker.io/<DOCKERHUB_USERNAME>/devops-calcolatrice
+
+## Fare build immagine
+
+giuliabota è il mio username su Docker Hub = <DOCKERHUB_USERNAME>
+
+docker build -f Dockerfile -t  giuliabota/devops-calcolatrice:manuale .
+.
+## Fare il push dell'immagine
+
+docker push giuliabota/devops-calcolatrice:manuale
+Aggiungi i secret su GitHub
+Nel repo GitHub → Settings → Secrets and variables → Actions → New repository secret
+
+DOCKERHUB_USERNAME
+DOCKERHUB_TOKEN
+👉 token generato da Docker Hub (Account Settings → Access Token)
 
 
 
