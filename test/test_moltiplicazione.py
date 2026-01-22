@@ -1,3 +1,4 @@
+import pytest
 from operazioni import moltiplicazione
 
 def test_moltiplicazione_positivi():

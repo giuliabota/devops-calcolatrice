@@ -31,4 +31,5 @@ jobs:
     # 4. Esegue i test
     - name: Test with pytest
       run: |
-        pytest
+        pytest -v --tb=short
+        # --tb=short rende l'output dei test più compatto

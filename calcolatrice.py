@@ -1,10 +1,12 @@
-from operazioni import somma, sottrazione
+from operazioni import somma, sottrazione, moltiplicazione
 
 def calcolatrice(operazione: str, a: float, b: float):
     if operazione == "somma":
         return somma(a, b)
     elif operazione == "sottrazione":
         return sottrazione(a, b)
+    elif operazione == "moltiplicazione":
+        return moltiplicazione(a, b)    
     else:
         return None
     
