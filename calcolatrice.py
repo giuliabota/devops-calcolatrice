@@ -20,6 +20,7 @@ if __name__ == "__main__":
     y = input("Inserisci il secondo numero: ")
     print("Somma di", x, "e", y, ":", calcolatrice("somma", float(x), float(y)))
     print("Sottrazione di", x, "e", y, ":", calcolatrice("sottrazione", float(x), float(y)))
+    print("Moltiplicazione di", x, "e", y, ":", calcolatrice("moltiplicazione", float(x), float(y)))
 
 
 
