@@ -14,7 +14,8 @@ def calcolatrice(operazione: str, a: float, b: float):
 if __name__ == "__main__":
     print("Somma di 3 e 5:", calcolatrice("somma", 3, 5))
     print("Sottrazione di 10 e 4:", calcolatrice("sottrazione", 10, 4))
-    print("Operazione non valida:", calcolatrice("moltiplicazione", 2, 3))
+    print("Moltiplicazione 3 per 2:", calcolatrice("moltiplicazione", 2, 3))
+    print("Operazione non valida:", calcolatrice("divisione", 2, 3))
 
 
 
