@@ -9,6 +9,6 @@ __pycache__/
 .build/
 
 # Ignora i test
-test/m
+test/
 test_*.py
 *_test.py
